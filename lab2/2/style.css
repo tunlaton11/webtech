@@ -1,0 +1,10 @@
+body {
+    font-family: Kanit, sans-serif;
+}
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1pt solid black;
+}

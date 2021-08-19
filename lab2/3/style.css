@@ -1,0 +1,16 @@
+body {
+    font-family: Kanit, sans-serif;
+}
+img {
+    width: 200px;
+}
+.content, .page {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
+a {
+    margin-left: 20px;
+    margin-right: 20px;
+}

@@ -1,0 +1,25 @@
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+p {
+    font-size: 20px;
+}
+
+.left {
+    background-color:#ded0fd;
+    padding:20px;
+    float:left;
+    width:40%; 
+}
+.cvphoto {
+    background-color:#ffffff;
+    padding:20px;
+    float:left;
+    width:30%; 
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
