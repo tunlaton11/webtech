@@ -1,0 +1,26 @@
+body {
+    font-family: Kanit, sans-serif;
+    background-color: #d8c7ee;
+}
+.content {
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    border: 1px solid;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+}
+td, tr {
+    border: 1px solid;
+    background-color: #ceece2;
+}
+th {
+    background-color: #6eb96e;
+}
+p {
+    color: #ff2c2c;
+    margin: 0px;
+
+}
