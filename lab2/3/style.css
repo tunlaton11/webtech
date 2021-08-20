@@ -1,5 +1,6 @@
 body {
     font-family: Kanit, sans-serif;
+    background-color: #2a4b64;
 }
 img {
     width: 200px;
@@ -7,10 +8,17 @@ img {
 .content, .page {
     text-align: center;
 }
-p {
+p, h1 {
     text-align: center;
+    color: #ee694e;
 }
 a {
     margin-left: 20px;
     margin-right: 20px;
+    color: #ee694e;
+}
+hr {
+    border: 1px solid #ee694e;
+    padding: 0px;
+
 }
