@@ -1,0 +1,9 @@
+body {
+    font-family: 'Kanit', sans-serif;
+}
+.container {
+    background-color: rgb(217, 236, 217);
+    border-radius: 10px;
+    max-width: 500px;
+    
+}
