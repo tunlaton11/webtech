@@ -16,7 +16,7 @@
     <title>lab 3.1</title>
 </head>
 <body>
-    <div class="container w-50 p-3">
+    <div class="container w-50 p-3 ">
         <h2>กรอกแบบฟอร์ม</h2>
         <form role="form" name='myForm'>
             <div class='form-group'>
@@ -27,7 +27,7 @@
                 <div class='col-3'>
                     <label for="front">คำนำหน้า: </label>
                     <select class="form-control" id='front'>
-                        <option value="-" selected></option>-</option>
+                        <option value="-" selected>-</option>
                         <option value="นาย">นาย</option>
                         <option value="นาง">นาง</option>
                         <option value="นางสาว">นางสาว</option>
@@ -59,8 +59,8 @@
                 </div>
                 <div class='col'>
                     <label for="pro">จังหวัด: </label>
-                    <select name="province" class="form-control">
-                        <option value="" selected>- เลือกจังหวัด -</option>
+                    <select class="form-control" id='pro'>
+                        <option value="-" selected>- เลือกจังหวัด -</option>
                         <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
                         <option value="กระบี่">กระบี่ </option>
                         <option value="กาญจนบุรี">กาญจนบุรี </option>

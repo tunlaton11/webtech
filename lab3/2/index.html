@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="container w-50 p-3">
-        <h2>กรอกแบบฟอร์ม</h2>
+        <h2>กรอกแบบฟอร์ม (validation check included)</h2>
         <form role="form" name='myForm'>
             <div class='form-group'>
                 <label for="n-id">หมายเลขบัตรประชาชน: </label>
@@ -59,8 +59,8 @@
                 </div>
                 <div class='col'>
                     <label for="pro">จังหวัด: </label>
-                    <select name="province" class="form-control">
-                        <option value="" selected>- เลือกจังหวัด -</option>
+                    <select id='pro' class="form-control">
+                        <option value="-" selected>- เลือกจังหวัด -</option>
                         <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
                         <option value="กระบี่">กระบี่ </option>
                         <option value="กาญจนบุรี">กาญจนบุรี </option>
