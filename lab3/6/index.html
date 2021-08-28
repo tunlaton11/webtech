@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <title>lab 3.6</title>
+</head>
+<body>
+    <div class="container w-100 p-3">
+        <div class='row'>
+            <div class='col shadow p-6 mb-2' id='left'>
+                <h1>Create your card</h1>
+                <form role="form" name='myForm'>
+                    <div class='form-group'>
+                        <label for="name">Full Name </label>
+                        <input type="text" class="form-control" id="name"">
+                    </div>
+                    <div class='form-group'>
+                        <label for="tel">Phone </label>
+                        <input type="text" class="form-control" id="tel"">
+                    </div>
+                    <div class='form-group'>
+                        <label for="email">Email </label>
+                        <input type="email" class="form-control" id="email"">
+                    </div>
+                    <div class='form-group'>
+                        <label for="company">Company </label>
+                        <input type="text" class="form-control" id="company"">
+                    </div>
+                    <button type="button" class="btn btn-warning btn-lg btn-block" onclick="create()">Create</button>
+            </div>
+            <div class='col' id='right'>
+                <div class="card shadow p-3 mb-5">
+                    <div class="card-body">
+                        <div class='row'>
+                            <div class='col-8'>
+                                <h5 id='showName'></h5>
+                                <p id='showPhone'></p>
+                                <p id='showMail'></p>
+                                <p id='showCom'></p>
+                            </div>
+                            <div class='col'>
+                                <img id='user' src="" alt="">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
