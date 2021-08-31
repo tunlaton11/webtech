@@ -1,0 +1,27 @@
+html body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #100E17;
+    color: #fff;
+    
+}
+
+.container {
+    margin-top: 100px;
+}
+
+
+
+.white, .white a {
+    color: #fff;
+}
+
+.btn {
+    border: 0px;
+}
+
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+button:focus { outline: none; }
