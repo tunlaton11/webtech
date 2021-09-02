@@ -6,7 +6,7 @@ html body {
 }
 
 .container {
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 
@@ -15,13 +15,40 @@ html body {
     color: #fff;
 }
 
-.btn {
-    border: 0px;
-}
+
 
 .btn:focus {
     outline: none;
     box-shadow: none;
 }
 
-button:focus { outline: none; }
+#content {
+    margin-top: 200px;
+}
+
+.head {
+    margin-bottom: 50px;
+}
+
+.bg-custom-1 {
+    background-color: #1F1E24!important;
+
+}
+.list-group-item-custom-1 {
+    background-color: #1F1E24!important;
+
+}
+.badge-custom-1 {
+    background-color: #0D9782;
+
+}
+#img-in {
+    width: 100px;
+}
+.hideme {
+    opacity:0;
+}
+
+footer {
+    margin: 100px 50px 50px 50px
+}
