@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src='script.js'></script>
+    <title>lab 4.5</title>
+</head>
+<body>
+    <div class="container-fluid mt-5 px-5">
+        <div class='row'>
+            <div class='col-sm-12' align="center">
+                <h1>Tunwongchai Restaurant</h1>
+                <button type="button" class="btn btn-outline-success btn-sm" disabled>Good food, good choice</button>
+            </div>
+        </div>
+        <div class='row mt-5'>
+            <div class='col-sm-8'>
+                <div class='card shadow rounded'>
+                    <div class='row'>
+                        <div class='col-sm-4'>
+                            <img src="p1.jpg" class="img-fluid">
+                        </div>
+                        <div class='col-sm-8'>
+                            <div class='card-body'>
+                                <h2>Ribeye Steak</h2>
+                                <p class='text-muted'>Deliver by Tunwongchai</p>
+                                <div class='row mt-5 mr-2 justify-content-end'>
+                                    <button class="btn btn-success mt-5" onclick="addList('Ribeye Steak')" id='b1'>Add Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='card shadow mt-5 rounded'>
+                    <div class='row'>
+                        <div class='col-sm-4'>
+                            <img src="p2.jpg" class="img-fluid">
+                        </div>
+                        <div class='col-sm-8'>
+                            <div class='card-body'>
+                                <h2>Hamburger</h2>
+                                <p class='text-muted'>Deliver by Tunwongchai</p>
+                                <div class='row mt-5 mr-2 justify-content-end'>
+                                    <button class="btn btn-success mt-5" onclick="addList('Hamburger')">Add Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class='card shadow my-5 rounded'>
+                    <div class='row'>
+                        <div class='col-sm-4'>
+                            <img src="p3.jpg" class="img-fluid">
+                        </div>
+                        <div class='col-sm-8'>
+                            <div class='card-body'>
+                                <h2>Taco</h2>
+                                <p class='text-muted'>Deliver by Tunwongchai</p>
+                                <div class='row mt-5 mr-2 justify-content-end'>
+                                    <button class="btn btn-success mt-5" onclick="addList('Taco')">Add Order</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class='col-sm-4'>
+                <div class="card">
+                    <ul class="list-group"  id='list'>
+                        <li class="list-group-item bg-warning">
+                            Order lists
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
