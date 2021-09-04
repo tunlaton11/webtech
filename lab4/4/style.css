@@ -1,0 +1,16 @@
+html body {
+    font-family: 'Kanit', sans-serif;
+
+}
+hr {
+    margin: 30px 10px 30px 10px;
+}
+table {
+    margin-top: 50px;
+}
+td ,tr ,th {
+    border-collapse: collapse;
+    border: 1px solid;
+    width: 80px;
+    height: 80px;
+}
