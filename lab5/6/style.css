@@ -1,0 +1,11 @@
+html body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #082032;
+
+}
+
+.container {
+    background-color: #334756;
+    color: #fff;
+    border-radius: 20px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>lab 5.5</title>
+</head>
+<body>
+    <div class="container w-75 my-5">
+        <div class="row display-4 justify-content-center mb-3">
+            Tutor list
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <ul class="list-group" id='list'>
+
+                </ul>
+            </div>
+            <div id="content" class="col-sm-9">
+
+                <ul>
+                    <li>a</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        let requestURL = 'tutor.json'; 
+        let request = new XMLHttpRequest(); 
+        request.onreadystatechange = function () { 
+            if (request.readyState == 4 && request.status == 200) {
+                dataReportStatus(JSON.parse(request.responseText));
+            } }; 
+        request.open("GET", requestURL, true); 
+        request.send(); 
+
+        function dataReportStatus(data) {
+            let list = "";
+            let content = "";
+            for(i = 0;i < data.length;i++) {
+                list += '<li class="list-group-item bg-info">'+ data[i].firstname+' '+ data[i].lastname +'</li>';
+                content += '<div class="border mb-3 bg-warning rounded p-2"><h3>'+ data[i].firstname+' '+ data[i].lastname +'</h3></div>';
+                content += '<h5>Age : '+ data[i].age +'</h5><h5>Tel : '+data[i].tel +'</h5><h5>Subject :</h5>';
+                content += '<ul>';
+                    for(j=0;j<data[i].subject.length;j++) {
+                        content += '<li>'+ data[i].subject[j]+'</li>';
+
+                    }
+                content += '</ul>';
+            }
+            document.getElementById("list").innerHTML = list;
+            document.getElementById("content").innerHTML = content;
+        }
+    </script>
+</body>
+</html>
