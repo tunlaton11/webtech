@@ -1,0 +1,30 @@
+* {
+    box-sizing:border-box;
+}
+.head {
+    padding:20px;
+}
+.left {
+
+    padding:20px;
+    float:left;
+    width:33%; 
+}
+.center {
+
+    padding:20px;
+    float:left;
+    width:33%; 
+}
+.right {
+
+    padding:20px;
+    float:left;
+    width:33%; 
+}
+
+@media screen and (max-width:400px) {
+.left, .center, .right {
+    width:100%; 
+    }
+}

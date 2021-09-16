@@ -1,0 +1,32 @@
+img {
+    width: 200px;
+    border: 1px solid;
+    box-sizing:border-box;
+    padding:20px;
+}
+
+.img-1 {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+.img-2 {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+.img-3 {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+.img-4 {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+@media screen and (max-width:600px) {
+    .img-1, .img-2, .img-3, .img-4{
+        width:100%; 
+        }
+    }
