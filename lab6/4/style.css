@@ -1,0 +1,80 @@
+html body {
+    font-family: 'Kanit', sans-serif;
+
+}
+
+.head {
+    background-color: #38A3A5;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+.content {
+    margin-top:10px;
+    margin-bottom: 10px;
+
+}
+.nav-bar {
+    float: left;
+    width: 20%;
+}
+.nav-list {
+    border-radius: 20px;
+    background-color: #FFE194;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 10px;
+    text-align: center;
+
+}
+.detail {
+    float: left;
+    width: 60%;
+
+}
+.my-img {
+    width: 20%;
+    float: left;
+    text-align: center;
+
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h3 {
+    margin: 0px;
+}
+.foot {
+    background-color: #38A3A5;
+    text-align: center;
+    clear: both;
+    padding: 5px;
+    border-radius: 10px;
+}
+@media screen and (max-width:620px) {
+    .detail, .my-img, img{
+        width: 100%; 
+    }
+    .head {
+        width: 100%;
+        display: flex;
+        order: 0;
+        text-align: center;
+
+    }
+    .content {
+        flex-direction: column;
+        display: flex;
+    }
+
+    
+    .nav-bar, .nav-list{
+
+        order: -1;
+        display: flex;
+        width: 100%;
+        
+
+    }
+}
