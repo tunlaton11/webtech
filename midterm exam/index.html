@@ -1,0 +1,116 @@
+<!-- 63070224 Tunlaton Wongchai -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <title>63070224</title>
+</head>
+<body>
+    <div class='container'>
+        <div class='row my-5'>
+            <form>
+                <div class="form-group">
+                  <label for="">Question</label>
+                  <input type="text" class="form-control" id="addQue">
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="crrA" value="A">
+                    <label class="form-check-label" for="gridRadios1">
+                        A
+                    </label>
+               
+                  <input type="text" class="form-control" id="addA">
+        
+                </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="crrB" value="B">
+                        <label class="form-check-label" for="gridRadios1">
+                          B
+                        </label>
+                      </div>                  
+                  <input type="text" class="form-control" id="addB">
+        
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="crrC" value="C">
+                    <label class="form-check-label" for="gridRadios1">
+                        C
+                    </label>
+                    </div>                  
+                <input type="text" class="form-control" id="addC">
+        
+
+                <button type="submit" class="btn btn-primary" onclick="addData()">Submit</button>
+              </form>
+        </div>
+        <div class='row'>
+            <table class="table" id='tableList'>
+                <thead>
+                    <tr>
+                        <th scope="col">ข้อที่</th>
+                        <th scope="col">คำถาม</th>
+                        <th scope="col">A</th>
+                        <th scope="col">B</th>
+                        <th scope="col">C</th>
+                        <th scope="col">คำตอบ</th>
+                    </tr>
+                </thead>
+                <tr id='test'></tr>
+            </table>
+        </div>
+        
+    </div>
+    <script>
+        let requestURL = 'question.json';
+        let request = new XMLHttpRequest();
+
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) {
+                dataReportStatus(JSON.parse(request.responseText));
+            }
+        };
+        request.open("GET", requestURL, true);
+        request.send();
+
+        function dataReportStatus(data) {
+            var table = document.getElementById('tableList');
+            for (var i = 0; i < data.length; i++) {
+                var arr = [i+1, data[i].question, data[i].answers.a, data[i].answers.b, data[i].answers.c, data[i].answers.correct];
+                let t_row = document.createElement('tr');
+
+                for (var j = 0; j < arr.length; j++) {
+                    var dat = document.createElement('td');
+                    dat.innerHTML = arr[j];
+                    t_row.appendChild(dat);
+                }
+                table.appendChild(t_row);
+
+                
+            }
+        }
+        function addData() {
+            var table = document.getElementById('tableList');
+            que = document.getElementById('addQue').value;
+            addA = document.getElementById('addA').value;
+            addB = document.getElementById('addB').value;
+            addC = document.getElementById('addC').value;
+            alert(que + ' ' + addA + ' ' + addB + ' ' + addC);
+
+        }
+
+    
+    </script>
+</body>
+</html>

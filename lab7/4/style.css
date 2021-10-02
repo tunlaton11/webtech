@@ -1,0 +1,16 @@
+html body {
+    font-family: 'Kanit', sans-serif;
+
+}
+.form-control {
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+}
+.btn{
+    margin-top: 20px;
+    
+}
+p {
+    margin: 0px;
+}
