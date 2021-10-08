@@ -17,6 +17,7 @@
 <body>
     <div class="container w-75 p-5">
     <?php
+    
         $url = "https://covid19.ddc.moph.go.th/api/Cases/today-cases-by-provinces";    
         $response = file_get_contents($url);
         $result = json_decode($response);
