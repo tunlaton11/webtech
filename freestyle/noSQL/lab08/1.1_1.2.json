@@ -1,0 +1,95 @@
+{
+    "Student": [
+        {
+            "StudentID": "S001",
+            "StudentName": "Khim",
+            "Course": [
+                {
+                    "CourseNo": "C01",
+                    "Grade": "A"
+                },
+                {
+                    "CourseNo": "C02",
+                    "Grade": "B"
+                }
+            ]
+        },
+        {
+            "StudentID": "S002",
+            "StudentName": "Alex",
+            "Course": [
+                {
+                    "CourseNo": "C01",
+                    "Grade": "A"
+                },
+                {
+                    "CourseNo": "C04",
+                    "Grade": "C"
+                },
+                {
+                    "CourseNo": "C02",
+                    "Grade": "C"
+                }
+            ]
+        },
+        {
+            "StudentID": "S003",
+            "StudentName": "Tommy",
+            "Course": [
+                {
+                    "CourseNo": "C01",
+                    "Grade": "B"
+                }
+            ]
+        }
+    ]
+}
+{
+    "Course": [
+        {
+            "CourseNo": "C01",
+            "Student": [
+                {
+                    "StudentID": "s001",
+                    "StudentName": "Khim",
+                    "Grade": "A"
+                },
+                {
+                    "StudentID": "s002",
+                    "StudentName": "Alex",
+                    "Grade": "A"
+                },
+                {
+                    "StudentID": "s003",
+                    "StudentName": "Tommy",
+                    "Grade": "B"
+                }
+            ]
+        },
+        {
+            "CourseNo": "C02",
+            "Student": [
+                {
+                    "StudentID": "s001",
+                    "StudentName": "Khim",
+                    "Grade": "B"
+                },
+                {
+                    "StudentID": "s002",
+                    "StudentName": "Alex",
+                    "Grade": "C"
+                }
+            ]
+        },
+        {
+            "CourseNo": "C04",
+            "Student": [
+                {
+                    "StudentID": "s002",
+                    "StudentName": "Alex",
+                    "Grade": "C"
+                }
+            ]
+        }
+    ]
+}

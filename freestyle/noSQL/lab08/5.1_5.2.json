@@ -50,3 +50,58 @@
         }
     ]
 }
+{
+    "Order": [
+        {
+            "OrderID": 1006,
+            "OrderDate": "24-10-2560",
+            "CustID": 9,
+            "CustName": "Jane",
+            "CustAddress": "Bangkok"
+        },
+        {
+            "OrderID": 1007,
+            "OrderDate": "15-01-2562",
+            "CustID": 22,
+            "CustName": "Adam",
+            "CustAddress": "Phuket"
+        }
+    ],
+    "Product": [
+        {
+            "ProductID": 7,
+            "ProductName": "Table",
+            "UnitPrice": 2200,
+            "OrderQuantity": 2,
+            "OrderID": 1006
+        },
+        {
+            "ProductID": 8,
+            "ProductName": "Chair",
+            "UnitPrice": 1200,
+            "OrderQuantity": 2,
+            "OrderID": 1006
+        },
+        {
+            "ProductID": 5,
+            "ProductName": "Book",
+            "UnitPrice": 500,
+            "OrderQuantity": 1,
+            "OrderID": 1006
+        },
+        {
+            "ProductID": 5,
+            "ProductName": "Lamp",
+            "UnitPrice": 850,
+            "OrderQuantity": 1,
+            "OrderID": 1007
+        },
+        {
+            "ProductID": 3,
+            "ProductName": "Book",
+            "UnitPrice": 500,
+            "OrderQuantity": 1,
+            "OrderID": 1007
+        }
+    ]
+}

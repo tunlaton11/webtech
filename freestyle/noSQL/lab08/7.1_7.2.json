@@ -133,3 +133,122 @@
         }
     ]
 }
+
+
+{
+    "Product": [
+        {
+            "ProductID": "p001",
+            "ProductName": "iPhone",
+            "BrandName": "Apple",
+            "Price": 45000
+        },
+        {
+            "ProductID": "p002",
+            "ProductName": "Suface pro",
+            "BrandName": "Microsoft",
+            "Price": 38000
+        },
+        {
+            "ProductID": "p003",
+            "ProductName": "iPad",
+            "BrandName": "Apple",
+            "Price": 22000
+        },
+        {
+            "ProductID": "p004",
+            "ProductName": "Galaxy Tab",
+            "BrandName": "Samsung",
+            "Price": 12000
+        }
+    ],
+    "Sales": [
+        {
+            "InvocieID": "V001",
+            "ProductID": "p001",
+            "Quantity": 1
+        },
+        {
+            "InvocieID": "V001",
+            "ProductID": "p003",
+            "Quantity": 2
+        },
+        {
+            "InvocieID": "V002",
+            "ProductID": "p002",
+            "Quantity": 1
+        },
+        {
+            "InvocieID": "V003",
+            "ProductID": "p001",
+            "Quantity": 2
+        },
+        {
+            "InvocieID": "V003",
+            "ProductID": "p002",
+            "Quantity": 3
+        },
+        {
+            "InvocieID": "V003",
+            "ProductID": "p004",
+            "Quantity": 1
+        },
+        {
+            "InvocieID": "V003",
+            "ProductID": "p003",
+            "Quantity": 1
+        },
+        {
+            "InvocieID": "V004",
+            "ProductID": "p002",
+            "Quantity": 2
+        },
+        {
+            "InvocieID": "V004",
+            "ProductID": "p004",
+            "Quantity": 1
+        }
+    ],
+    "Invocie": [
+        {
+            "InvocieID": "V001",
+            "InvocieDate": "20-05-62",
+            "CustID": "C40",
+            "CustName": "Aye Mi",
+            "Tel": "+6693-908-5236",
+            "HouseID": 70,
+            "Road": "Rama II",
+            "City": "Bangkok"
+        },
+        {
+            "InvocieID": "V002",
+            "InvocieDate": "12-11-62",
+            "CustID": "C16",
+            "CustName": "Takashi",
+            "Tel": "+6677-101-3758",
+            "HouseID": 482,
+            "Road": "Rama IV",
+            "City": "Bangkok"
+        },
+        {
+            "InvocieID": "V003",
+            "InvocieDate": "09-09-60",
+            "CustID": "C93",
+            "CustName": "Somchai",
+            "Tel": "+6694-994-3456",
+            "HouseID": 567,
+            "Road": "Asia",
+            "City": "Phuket"
+        },
+        {
+            "InvocieID": "V004",
+            "InvocieDate": "17-08-61",
+            "CustID": "C56",
+            "CustName": "Thana",
+            "Tel": "+6677-434-9761",
+            "HouseID": 12,
+            "Road": "Rama IX",
+            "City": "Bangkok"
+        }
+    ]
+}
