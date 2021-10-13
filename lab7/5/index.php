@@ -18,6 +18,7 @@
     <div class="container w-75 p-5">
     <?php
     echo "<table class='table table-bordered'>";
+    
 
     for ($i = 0; $i < 13; $i++) {
         echo "<tr>";
