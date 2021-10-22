@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src='script.js'></script>
+    <title>63070224 Project-2</title>
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top" id="mainNav">
+        <div class="container px-4">
+            <a class="navbar-brand p-3" href="#page-top">
+                <h2><b>WEB TECHNOLOGY PROJECT 2</b></h2>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#topic-1">แนะนำ Vue.js</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#topic-2">รายละเอียด</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#topic-3">การใช้งาน</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#topic-4">ตัวอย่างเว็บไซต์</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#topic-5">อ้างอิง</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-primary bg-gradient text-white mt-5" id='topic-1'>
+        <div class="container px-4">
+            <div class='row'>
+                <div class='col-md-7 text-center'>
+                    <h1 style='font-size:4.75rem'><img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/2367px-Vue.js_Logo_2.svg.png"
+                            alt="" class='img-fluid w-25'><b>Vue.js</b></h1>
+                </div>
+                <div class='col-md-5 pt-3'>
+                    <h1>มาทำความรู้จักกับ Vue.js</h1>
+                    <p class='lead'> Vue.js คืออะไร ? Vue.js เป็น Front-End Framework ที่เป็น Open-source
+                        และเขียนด้วยภาษา Javascript
+                        มีลักษณะเป็น single-page applications
+                        กำลังเป็นที่นิยมในปัจจุบัน ใช้งานและเรียนรู้ง่าย และกินทรัพยากรน้อยมาก
+                    </p>
+                </div>
+            </div>
+            <hr class="hr-light mx-auto">
+        </div>
+        <div class="container px-4 mt-5 ">
+            <div class='row text-center'>
+                <h2>ข้อดีและข้อเสียของ Vue.js</h2>
+                <table class="table table-borderless mt-5">
+                    <thead>
+                        <tr>
+                            <th class="table-light text-light bg-warning">ข้อดี</th>
+                            <th class="text-light bg-secondary">ข้อเสีย</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-light">
+                            <td>ใช้งานง่าย เรียนรู้ได้ไว</td>
+                            <td>ไม่เหมาะสำหรับเว็บไซต์ที่มีขนาดใหญ่มาก</td>
+                        </tr>
+                        <tr class="table-light">
+                            <td>กินพื้นที่และทรัพยาการน้อย เพียงแค่ 20KB</td>
+                            <td>ยังไม่มี Community ที่ใหญ่พอ</td>
+                        </tr>
+                        <tr class="table-light">
+                            <td>สามารถจัดการ DOM ได้ง่ายดาย</td>
+                            <td>ไม่เสถียรเท่าที่ควรเพราะเป็น Framework ใหม่</td>
+                        </tr>
+                        <tr class="table-light">
+                            <td>ทำ Unit-testing ได้ง่ายและรวดเร็ว</td>
+                            <td>ยังไม่มี Mobile Framework</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+    </header>
+    <!-- About section-->
+    <section id="topic-2">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <h1 class='text-secondary text-center' style='font-size:3rem;'>ทำไมถึงควรใช้ Vue.js ?</h1>
+                <hr class='hr-dark mt-3'>
+            </div>
+            <div class="row gx-4 justify-content-center mt-5">
+                <h2 class='text-danger'>Virtual DOM</h2>
+                <p class='lead'>Vue.js uses virtual DOM. Virtual DOM is, basically, a clone of the key DOM component
+                    that ingests each change planned for the DOM and is available as JavaScript data structures. The
+                    changes and progressions made to the JavaScript data structures are compared to the original data
+                    structure. Just the final changes reflect in the real DOM, which users have the option to see. This
+                    is an inventive and creative technique that is cost-effective with rapid changes.</p>
+            </div>
+            <div class="row gx-4 justify-content-center mt-3">
+                <h2 class='text-danger'>Two-Way Data Binding</h2>
+                <p class='lead'>VueJS features a two-way binding feature because of its MVVM architecture. The QRR helps
+                    manipulate or assign values to HTML attributes that speed up HTML blocks. VueJS has this two-way
+                    communication feature which makes sure that whatever changes are made in your UI is passed to the
+                    data and changes done in your data are reflected in the UI. This is different from the libraries
+                    like React.js where one-way communication is supported. </p>
+            </div>
+            <div class="row gx-4 justify-content-center mt-3">
+                <h2 class='text-danger'>Full-Stack/Authenticated Apps</h2>
+                <p class='lead'>Vue apps are generally data-driven user interfaces where most of the data are sourced
+                    from a secure API made with Laravel, Node, Django, Rails, Django, or some other server framework.
+                    These data provide a conventional REST API or GraphQL or real-time data through web sockets. The
+                    design patterns are usually used to integrate Vue into a full-stack configuration for keeping user
+                    data in a Vue app secure.</p>
+            </div>
+            <div class="row gx-4 justify-content-center mt-3">
+                <h2 class='text-danger'>Easy to Understand</h2>
+                <p class='lead'>One reason for the popularity of this structure is that it is very straightforward. The
+                    client can without any difficulty add Vue.js to its web project on account of its straightforward
+                    structure. It has a very characterized design for keeping your information, life-cycle techniques,
+                    and custom strategies independent. It additionally has some extraordinary features like viewers,
+                    registered properties and directives which make the cycle of building a cutting edge web application
+                    a breeze.every small and large organization can be created through this structure which spares a
+                    great deal of time.</p>
+            </div>
+            <div class="row gx-4 justify-content-center mt-3">
+                <h2 class='text-danger'>Computed Properties</h2>
+                <p class='lead'>This is one of the important features of Vue.js. It assists with listening to the
+                    modifications made to the UI elements and plays out a necessary logic so there is no requirement for
+                    extra coding for this. Use a computed property when you need to deal with mutating a property that
+                    depends upon other data properties. Any modifications to the dependent properties will trigger the
+                    logic or the computed property. They are stored depending on their conditions so they will possibly
+                    rerun if any dependency changes.</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- Services section-->
+    <section class="bg-light" id="topic-3">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Services we offer</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore,
+                        expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda
+                        laborum vel, labore ut velit dignissimos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section-->
+    <section id="topic-4">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Contact us</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat
+                        voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et
+                        repudiandae ipsa exercitationem, in, quo totam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="topic-5">
+        <div class="container px-4">
+            <div class="row gx-4 justify-content-center">
+                <div class="col-lg-8">
+                    <h2>Contact us</h2>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat
+                        voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et
+                        repudiandae ipsa exercitationem, in, quo totam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container px-4">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+
+</body>
+
+</html>
