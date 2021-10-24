@@ -5,17 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
@@ -104,49 +101,49 @@
             <div class="row gx-4 justify-content-center">
                 <h1 class='text-secondary text-center' style='font-size:3rem;'>ทำไมถึงควรใช้ Vue.js ?</h1>
                 <hr class='hr-dark mt-3'>
+                <p class='text-center'>Feature หลักและคุณสมบัติของ Vue.js</p>
             </div>
             <div class="row gx-4 justify-content-center mt-5">
                 <h2 class='text-danger'>Virtual DOM</h2>
-                <p class='lead'>Vue.js uses virtual DOM. Virtual DOM is, basically, a clone of the key DOM component
-                    that ingests each change planned for the DOM and is available as JavaScript data structures. The
-                    changes and progressions made to the JavaScript data structures are compared to the original data
-                    structure. Just the final changes reflect in the real DOM, which users have the option to see. This
-                    is an inventive and creative technique that is cost-effective with rapid changes.</p>
+                <p class='lead'>คือการสร้าง Tree-Object ซึ่งคือตัวแทนของ Real DOM หมายความว่า แทนที่เราจะสร้าง div
+                    จริงๆไว้ใน Browser เราก็สร้างมันไปเก็บไว้ใน Memory แทน แทนที่จะไปจัดการกับ Real DOM ด้วยการใช้ DOM
+                    API แบบเก่า ๆ ก็ใช้วิธีการ patch จากนั้นก็ Render UI ส่วนที่ถูกกระทำใหม่ และแทนที่จะต้องไปไล่ DOM
+                    ว่าอยู่ส่วนไหน ก็ใช้การ ref มาทำแทน โดย Virtual DOM ของ Vue.JS จะใช้ของ Snabbdom
+                    โดยมีการการันตรีมาแล้วว่า เร็วขึ้นและลดการใช้หน่วยความจำลง 2–4 เท่าตัว</p>
             </div>
             <div class="row gx-4 justify-content-center mt-3">
                 <h2 class='text-danger'>Two-Way Data Binding</h2>
-                <p class='lead'>VueJS features a two-way binding feature because of its MVVM architecture. The QRR helps
-                    manipulate or assign values to HTML attributes that speed up HTML blocks. VueJS has this two-way
-                    communication feature which makes sure that whatever changes are made in your UI is passed to the
-                    data and changes done in your data are reflected in the UI. This is different from the libraries
-                    like React.js where one-way communication is supported. </p>
+                <p class='lead'>Vue.js มี two-way binding feature จากสถาปัตยกรรม MVVM ซึ่งจะช่วยจัดการหรือกำหนดค่าของ
+                    HTML attributes ซึ่งทำให้มีประสิทธิภาพเร็วขึ้น two-way binding feature ของ Vue.js
+                    จะมั่นใจได้ว่าการเปลี่ยนแปลงในหน้า UI ข้อมูลจะถูกส่งไปอย่างรวดเร็วและแสดงผลออกมาทันที ซึ่งต่างจาก
+                    React.js ที่เป็น one-way </p>
+                <img class='img-fluid w-50 pb-5' src="https://content.altexsoft.com/media/2019/09/word-image-18.png"
+                    alt="">
             </div>
             <div class="row gx-4 justify-content-center mt-3">
-                <h2 class='text-danger'>Full-Stack/Authenticated Apps</h2>
-                <p class='lead'>Vue apps are generally data-driven user interfaces where most of the data are sourced
-                    from a secure API made with Laravel, Node, Django, Rails, Django, or some other server framework.
-                    These data provide a conventional REST API or GraphQL or real-time data through web sockets. The
-                    design patterns are usually used to integrate Vue into a full-stack configuration for keeping user
-                    data in a Vue app secure.</p>
+                <h2 class='text-danger'>Templates</h2>
+                <p class='lead'>Vue.js ใช้ HTML-based DOM ซึ่งรวมกับข้อมูลของ Vue.js เพื่อที่จะแปลงไปเป็น templates
+                    ภายใต้ Virtual DOM Render functions ซึ่ง Developer สามารถกำหนด templates โดยใช้ render function ซึ่ง
+                    templates จะมีลักษณะเป็น single root node แต่ใน Vue.js 3.0 สามารถใช้เป็น multiple root node ได้แล้ว
+                </p>
+                <img class='img-fluid w-75 pb-5' src="https://miro.medium.com/max/1400/1*QfFB9Xn0ss_jo3knkU5RzA.png"
+                    alt="">
             </div>
             <div class="row gx-4 justify-content-center mt-3">
                 <h2 class='text-danger'>Easy to Understand</h2>
-                <p class='lead'>One reason for the popularity of this structure is that it is very straightforward. The
-                    client can without any difficulty add Vue.js to its web project on account of its straightforward
-                    structure. It has a very characterized design for keeping your information, life-cycle techniques,
-                    and custom strategies independent. It additionally has some extraordinary features like viewers,
-                    registered properties and directives which make the cycle of building a cutting edge web application
-                    a breeze.every small and large organization can be created through this structure which spares a
-                    great deal of time.</p>
+                <p class='lead'>นี่เป็หนึ่งเหตุผลที่ว่าทำไม Vue.js จึงได้รับความนิยม เพราะว่ามีโครงสร้างที่ตรงไปตรงมา
+                    มีการออกแบบที่โดดเด่น เพื่อใช้ในการจัดเก็บข้อมูล, การทำ life cycle และอิสระในการกำหนดโครงสร้างเอง
+                    นอกจากนี้ยังมีคุณลักษณะพิเศษเช่น viewers, registered properties และ directives มีส่วนให้ cycle
+                    ในการพัฒนาเป็นเรื่องที่ง่ายและทันสมัย ช่วยทำให้องค์กรประหยัดเวลาได้มาก</p>
             </div>
             <div class="row gx-4 justify-content-center mt-3">
                 <h2 class='text-danger'>Computed Properties</h2>
                 <p class='lead'>This is one of the important features of Vue.js. It assists with listening to the
-                    modifications made to the UI elements and plays out a necessary logic so there is no requirement for
-                    extra coding for this. Use a computed property when you need to deal with mutating a property that
-                    depends upon other data properties. Any modifications to the dependent properties will trigger the
-                    logic or the computed property. They are stored depending on their conditions so they will possibly
-                    rerun if any dependency changes.</p>
+                    นี่เป็หนึ่ง feature ที่สำคัญของ Vue.js ที่ช่วยในการจัดการกับ UI Element และเพิ่มลูกเล่นที่มี logic
+                    ซึ่งไม่จำเป็นต้องเข้ารหัสเลย ดังนั้นเราสามารถนำ Computed property
+                    มาใช้ได้เพื่อแยกส่วนการคำนวณออกไปจากส่วนการรับข้อมูลจากผู้ใช้งานโดยที่ Computed property
+                    จะคอยตรวจสอบการเปลี่ยนแปลงให้เราเองจากนั้นจะทำการเรียกหรือ trigger
+                    การทำงานให้เองแบบอัตโนมัติหรือเราเรียก Computed property ว่า getter method</p>
             </div>
 
         </div>
