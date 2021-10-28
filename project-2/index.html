@@ -12,8 +12,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/styles/default.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.3.1/build/highlight.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@
 </head>
 
 <body id="page-top">
-
+    <script>hljs.highlightAll();</script>
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top" id="mainNav">
         <div class="container px-4">
             <a class="navbar-brand p-3" href="#page-top">
@@ -102,12 +102,12 @@
     <section id="topic-2">
         <div class="container px-4">
             <img class='img-fluid mx-auto d-block mb-4' src="asset/sit.png" style='width:20rem'>
-            <div class="row gx-4 justify-content-center">
+            <div class="row  justify-content-center">
                 <h1 class='text-secondary text-center' style='font-size:3rem;'>ทำไมถึงควรใช้ Vue.js ?</h1>
                 <hr class='hr-dark mt-3'>
                 <p class='text-center'>Feature หลักและคุณสมบัติของ Vue.js</p>
             </div>
-            <div class="row gx-4 justify-content-center mt-5">
+            <div class="row  justify-content-center mt-5">
                 <h2 class='text-danger'>Virtual DOM</h2>
                 <p class='lead'>คือการสร้าง Tree-Object ซึ่งคือตัวแทนของ Real DOM หมายความว่า แทนที่เราจะสร้าง div
                     จริงๆไว้ใน Browser เราก็สร้างมันไปเก็บไว้ใน Memory แทน แทนที่จะไปจัดการกับ Real DOM ด้วยการใช้ DOM
@@ -115,7 +115,7 @@
                     ว่าอยู่ส่วนไหน ก็ใช้การ ref มาทำแทน โดย Virtual DOM ของ Vue.JS จะใช้ของ Snabbdom
                     โดยมีการการันตรีมาแล้วว่า เร็วขึ้นและลดการใช้หน่วยความจำลง 2–4 เท่าตัว</p>
             </div>
-            <div class="row gx-4 justify-content-center mt-3">
+            <div class="row  justify-content-center mt-3">
                 <h2 class='text-danger'>Two-Way Data Binding</h2>
                 <p class='lead'>Vue.js มี two-way binding feature จากสถาปัตยกรรม MVVM ซึ่งจะช่วยจัดการหรือกำหนดค่าของ
                     HTML attributes ซึ่งทำให้มีประสิทธิภาพเร็วขึ้น two-way binding feature ของ Vue.js
@@ -124,7 +124,7 @@
                 <img class='img-fluid  pb-5' src="https://content.altexsoft.com/media/2019/09/word-image-18.png"
                     style="width:30rem">
             </div>
-            <div class="row gx-4 justify-content-center mt-3">
+            <div class="row  justify-content-center mt-3">
                 <h2 class='text-danger'>Templates</h2>
                 <p class='lead'>Vue.js ใช้ HTML-based DOM ซึ่งรวมกับข้อมูลของ Vue.js เพื่อที่จะแปลงไปเป็น templates
                     ภายใต้ Virtual DOM Render functions ซึ่ง Developer สามารถกำหนด templates โดยใช้ render function ซึ่ง
@@ -133,14 +133,14 @@
                 <img class='img-fluid  pb-5' src="https://miro.medium.com/max/1400/1*QfFB9Xn0ss_jo3knkU5RzA.png"
                     style="width:60rem">
             </div>
-            <div class="row gx-4 justify-content-center mt-3">
+            <div class="row  justify-content-center mt-3">
                 <h2 class='text-danger'>Easy to Understand</h2>
                 <p class='lead'>นี่เป็หนึ่งเหตุผลที่ว่าทำไม Vue.js จึงได้รับความนิยม เพราะว่ามีโครงสร้างที่ตรงไปตรงมา
                     มีการออกแบบที่โดดเด่น เพื่อใช้ในการจัดเก็บข้อมูล, การทำ life cycle และอิสระในการกำหนดโครงสร้างเอง
                     นอกจากนี้ยังมีคุณลักษณะพิเศษเช่น viewers, registered properties และ directives มีส่วนให้ cycle
                     ในการพัฒนาเป็นเรื่องที่ง่ายและทันสมัย ช่วยทำให้องค์กรประหยัดเวลาได้มาก</p>
             </div>
-            <div class="row gx-4 justify-content-center mt-3">
+            <div class="row  justify-content-center mt-3">
                 <h2 class='text-danger'>Computed Properties</h2>
                 <p class='lead'>นี่เป็นหนึ่ง feature ที่สำคัญของ Vue.js ที่ช่วยในการจัดการกับ UI Element
                     และเพิ่มลูกเล่นที่มี logic
@@ -148,8 +148,8 @@
                     มาใช้ได้เพื่อแยกส่วนการคำนวณออกไปจากส่วนการรับข้อมูลจากผู้ใช้งานโดยที่ Computed property
                     จะคอยตรวจสอบการเปลี่ยนแปลงให้เราเองจากนั้นจะทำการเรียกหรือ trigger
                     การทำงานให้เองแบบอัตโนมัติหรือเราเรียก Computed property ว่า getter method</p>
-                <script>hljs.highlightAll();</script>
-                <pre><code class="hljs java">
+
+                <pre><code class="hljs javascript">
         export default {
             data () {
                 text: 'hello world'
@@ -170,12 +170,12 @@
         <div class="container px-4">
             <img class='img-fluid mx-auto d-block mb-4' src="asset/NicePng_cartoon-computer-png_965527.png"
                 style='width: 20rem'>
-            <div class="row gx-4 justify-content-center">
+            <div class="row  justify-content-center">
                 <h1 class='text-secondary text-center' style='font-size:3rem;'>Vue.js เบื้องต้น</h1>
                 <hr class='hr-dark mt-3'>
                 <p class='text-center'>วิธีการใช้งาน Vue.js แบบเบื้องต้นที่ใครๆเริ่มทำได้</p>
             </div>
-            <div class="row gx-4  mt-3">
+            <div class="row   mt-3">
                 <h2 class='text-danger'>การเริ่มต้นใช้งาน</h2>
                 <p class='lead'>การเริ่มต้นใช้งาน Vue.js จะมีแนวทางได้ 2 วิธีดังนี้</p>
                 <ol class="list-unstyled">
@@ -190,7 +190,7 @@
                     </pre>
                 </ol>
             </div>
-            <div class="row gx-4  mt-3">
+            <div class="row   mt-3">
                 <h2 class='text-danger'>มาเริ่มสร้าง Project</h2>
                 <p class='lead'>หลังจากเรา run คำสั่ง</p>
                 <pre>
@@ -213,15 +213,204 @@
                 <p class='lead my-4'>จากนั้นเข้า browser ไปตาม address ที่ปรากฎ จะได้หน้าตาดังนี้ นั่นหมายถึง Vue.js
                     สามารถใช้งานได้แล้ว</p>
                 <img class='img-fluid' src="asset/ex-page.png" style='width:50rem'>
-
-
+                <p class='lead my-4'>และหน้าตาของ Vue.js ใน project จะมีลักษณะดังนี้</p>
+                <img class='img-fluid' src="asset/file.png" style='width:40rem'>
             </div>
-        </div>
+            <div class="row mt-5">
+                <h2 class='text-danger'>Component & Props</h2>
+                <p class='lead'>จะเห็นได้ว่าทุกๆไฟล์ .vue จะประกอบด้วย สามสิ่งดังนี้ </p>
+                <ul class='lead'>
+                    <li>template</li>
+                    <li>script</li>
+                    <li>style</li>
+                </ul>
+                <pre><code class="language-html">
+        //app.vue
+        &lt;template&gt;
+            &lt;img alt="Vue logo" src="./assets/logo.png" /&gt;
+            &lt;HelloWorld msg="Hello" /&gt;
+        &lt;/template&gt;
+        
+        &lt;script&gt;
+            import HelloWorld from "./components/HelloWorld.vue";
+
+            export default {
+                name: "App",
+                components: {
+                    HelloWorld,
+                },
+            };
+        &lt;/script&gt;
+        
+        &lt;style&gt;
+        #app {
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+        margin-top: 60px;
+        }
+        &lt;/style&gt;
+                </code></pre>
+                <pre><code class='language-html'>
+        // HelloWorld.vue
+        &lt;template&gt;
+            &lt;div class="hello"&gt;
+                &lt;h1&gt;{{ msg }}&lt;/h1&gt;
+                &lt;p&gt;
+                For a guide and recipes on how to configure / customize this project,&lt;br&gt;
+                check out the
+                &lt;a href="https://cli.vuejs.org" target="_blank" rel="noopener"&gt;vue-cli documentation&lt;/a&gt;.
+                &lt;/p&gt;
+                &lt;h3&gt;Installed CLI Plugins&lt;/h3&gt;
+                &lt;ul&gt;
+                &lt;li&gt;&lt;a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener"&gt;babel&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener"&gt;eslint&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;h3&gt;Essential Links&lt;/h3&gt;
+                &lt;ul&gt;
+                &lt;li&gt;&lt;a href="https://vuejs.org" target="_blank" rel="noopener"&gt;Core Docs&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="https://forum.vuejs.org" target="_blank" rel="noopener"&gt;Forum&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="https://chat.vuejs.org" target="_blank" rel="noopener"&gt;Community Chat&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="https://twitter.com/vuejs" target="_blank" rel="noopener"&gt;Twitter&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="https://news.vuejs.org" target="_blank" rel="noopener"&gt;News&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+                &lt;h3&gt;Ecosystem&lt;/h3&gt;
+                &lt;ul&gt;
+                &lt;li&gt;&lt;a href="https://router.vuejs.org" target="_blank" rel="noopener"&gt;vue-router&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="https://vuex.vuejs.org" target="_blank" rel="noopener"&gt;vuex&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener"&gt;vue-devtools&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener"&gt;vue-loader&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener"&gt;awesome-vue&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/template&gt;
+            
+        &lt;script&gt;
+            export default {
+            name: 'HelloWorld',
+            props: {
+                msg: String
+            }
+            }
+        &lt;/script&gt;
+            
+            &lt;!-- Add "scoped" attribute to limit CSS to this component only --&gt;
+            &lt;style scoped&gt;
+            h3 {
+            margin: 40px 0 0;
+            }
+            ul {
+            list-style-type: none;
+            padding: 0;
+            }
+            li {
+            display: inline-block;
+            margin: 0 10px;
+            }
+            a {
+            color: #42b983;
+            }
+            &lt;/style&gt;
+            
+                </code></pre>
+                <p class='lead'>จะเห็นได้ว่า App.vue มีการเรียกใช้ Component ที่ชื่อว่า HelloWorld นั่นคือ
+                    เราสามารถเขียน Component เพิ่มเองได้ เพื่อเรียกใช้งานในครั้งต่อๆไป <br> ต่อไปเราจะมาลองเขียน
+                    Component เพิ่มเอง คือ top กับ foot </p>
+                <pre><code class="language-html">
+        //top.vue
+        &lt;template&gt;
+            &lt;div class="top"&gt;
+                &lt;h2&gt;{{ msg }}&lt;/h2&gt;
+            &lt;/div&gt;
+        &lt;/template&gt;
+            
+        &lt;script&gt;&gt;
+            export default {
+            name: "top",
+            props: {
+                msg: String,
+            },
+            };
+        &lt;/script&gt;
+        
+        &lt;style&gt;&gt;
+        .top {
+        background-color: rgb(255, 121, 121);
+        padding: 50px;
+        }
+        &lt;/style&gt;
+                </code></pre>
+                <pre><code class="language-html">
+        //foot.vue
+        &lt;template&gt;
+            &lt;div class="foot"&gt;
+                &lt;h2&gt;{{ msg }}&lt;/h2&gt;
+            &lt;/div&gt;
+        &lt;/template&gt;
+            
+        &lt;script&gt;
+            export default {
+                name: "foot",
+                props: {
+                    msg: String,
+                },
+            };
+        &lt;/script&gt;
+            
+        &lt;style&gt;
+        .foot {
+        background-color: rgb(118, 94, 253);
+        padding: 50px;
+        }
+        &lt;/style&gt;
+                </code></pre>
+                <p class='lead'>เราจะสามารถกำหนด props ให้กับ component ได้ ซึ่ง component
+                    ที่อยู่ขั้นสูงกว่าจะสามรถใช้งานคุณสมบัติจาก props ได้ จากตัวอย่างเราได้กำหนด props ที่ชื่อว่า msg
+                    โดยให้แสดงผลเป็น String และจากนั้นเราจะเรียกใช้งาน top กับ foot ที่ App.vue</p>
+                <pre><code class="language-html">
+        //App.vue
+        &lt;template&gt;
+            &lt;top msg="this is top"/&gt;
+            &lt;h2&gt;Hello World&lt;/h2&gt;
+            &lt;foot msg="this is foot"/&gt;
+        &lt;/template &gt;
+            
+        &lt;script&gt;
+            import top from "./components/top.vue";
+            import foot from "./components/foot.vue";
+
+            export default {
+                name: "App",
+                components: {
+                    top,
+                    foot,
+                },
+            };
+        &lt;/script&gt;
+            
+        &lt;style&gt;
+        #app {
+        font-family: Avenir, Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #2c3e50;
+        margin-top: 60px;
+        }
+        &lt;/style&gt;
+                          
+                </code></pre>
+                <p class='lead'>จะได้ผลลัพธ์ดังนี้ </p>
+                <img class='img-fluid' src="asset/component.png" style='width:50rem'>
+            </div>
+
     </section>
 
     <section id="topic-4">
         <div class="container px-4">
-            <div class="row gx-4 justify-content-center">
+            <div class="row  justify-content-center">
                 <div class="col-lg-8">
                     <h2>Contact us</h2>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat
@@ -233,7 +422,7 @@
     </section>
     <section id="topic-5">
         <div class="container px-4">
-            <div class="row gx-4 justify-content-center">
+            <div class="row  justify-content-center">
                 <div class="col-lg-8">
                     <h2>Contact us</h2>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat
