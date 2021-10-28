@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrDlvhrrzIPfuW5j-yNXKphYh9HTZplW8&callback=initMap">
+        </script>
+    <link rel="stylesheet" href="style.css">
+    <script src='script.js'></script>
+    <title>lab 10.1</title>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='content'>
+            <label for="location">Destination: </label>
+            <input type="text" id='location'>
+            <button onclick="locationName()">Go to Destination</button>
+        </div>
+        <div class='content'>
+            <label for="lat">Latitude: </label>
+            <input type="text" id='lat'>
+            <label for="long">Longtitude: </label>
+            <input type="text" id='long'>
+            <button onclick="locationCo()">Go to Destination</button>
+        </div>
+        <div class='content'>
+            <iframe id="map" width='100%' height='500px' '
+                src=" https://maps.google.com/maps?q=&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen>
+            </iframe>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -121,8 +121,8 @@
                     HTML attributes ซึ่งทำให้มีประสิทธิภาพเร็วขึ้น two-way binding feature ของ Vue.js
                     จะมั่นใจได้ว่าการเปลี่ยนแปลงในหน้า UI ข้อมูลจะถูกส่งไปอย่างรวดเร็วและแสดงผลออกมาทันที ซึ่งต่างจาก
                     React.js ที่เป็น one-way </p>
-                <img class='img-fluid w-50 pb-5' src="https://content.altexsoft.com/media/2019/09/word-image-18.png"
-                    alt="">
+                <img class='img-fluid  pb-5' src="https://content.altexsoft.com/media/2019/09/word-image-18.png"
+                    style="width:30rem">
             </div>
             <div class="row gx-4 justify-content-center mt-3">
                 <h2 class='text-danger'>Templates</h2>
@@ -130,8 +130,8 @@
                     ภายใต้ Virtual DOM Render functions ซึ่ง Developer สามารถกำหนด templates โดยใช้ render function ซึ่ง
                     templates จะมีลักษณะเป็น single root node แต่ใน Vue.js 3.0 สามารถใช้เป็น multiple root node ได้แล้ว
                 </p>
-                <img class='img-fluid w-75 pb-5' src="https://miro.medium.com/max/1400/1*QfFB9Xn0ss_jo3knkU5RzA.png"
-                    alt="">
+                <img class='img-fluid  pb-5' src="https://miro.medium.com/max/1400/1*QfFB9Xn0ss_jo3knkU5RzA.png"
+                    style="width:60rem">
             </div>
             <div class="row gx-4 justify-content-center mt-3">
                 <h2 class='text-danger'>Easy to Understand</h2>
@@ -149,20 +149,18 @@
                     จะคอยตรวจสอบการเปลี่ยนแปลงให้เราเองจากนั้นจะทำการเรียกหรือ trigger
                     การทำงานให้เองแบบอัตโนมัติหรือเราเรียก Computed property ว่า getter method</p>
                 <script>hljs.highlightAll();</script>
-                <pre>
-                    <code class="hljs java">
-                        export default {
-                            data () {
-                                text: 'hello world'
-                            },
-                            computed: {                      // computed property
-                                formattedText: function () {
-                                    return this.text.toUpperCase()
-                            }
-                        }
-                    }
-                </code>
-                </pre>
+                <pre><code class="hljs java">
+        export default {
+            data () {
+                text: 'hello world'
+            },
+            computed: {                      // computed property
+                formattedText: function () {
+                    return this.text.toUpperCase()
+            }
+        }
+    }
+                </code></pre>
             </div>
 
         </div>
@@ -181,11 +179,11 @@
                 <h2 class='text-danger'>การเริ่มต้นใช้งาน</h2>
                 <p class='lead'>การเริ่มต้นใช้งาน Vue.js จะมีแนวทางได้ 2 วิธีดังนี้</p>
                 <ol class="list-unstyled">
-                    <li><b class='text-primary'>1. CDN</b></li>
+                    <li><b class='text-secondary'>1. CDN</b></li>
                     <pre>
                         <code class="hljs html">&lt;script src="https://cdn.jsdelivr.net/npm/vue"&gt;test&lt;/script&gt;</code>
                     </pre>
-                    <li><b class='text-primary'>2. CLI</b> * จะแนะนำวิธีนี้เนื่องจากเป็นที่นิยม และสร้าง
+                    <li><b class='text-secondary'>2. CLI</b> * จะแนะนำวิธีนี้เนื่องจากเป็นที่นิยม และสร้าง
                         Projectได้อย่างรวดเร็วผ่าน npm รวมถึงมี tools ให้หลังจากการติดตั้ง</li>
                     <pre>
                         <code class='hljs bash'>$ npm install -g @vue/cli</code>
