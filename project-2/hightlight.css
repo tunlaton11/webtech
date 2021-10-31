@@ -102,10 +102,12 @@ code.hljs {
 .hljs-symbol,
 .hljs-number,
 .hljs-link,
-.hljs-attr,
 .hljs-variable.constant_,
 .hljs-literal {
   color: #689757;
+}
+.hljs-attr {
+  color: #a4a3a3!important;
 }
 
 /* base0A - Classes, Markup Bold, Search Text Background */
